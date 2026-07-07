@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"cd ''C:\\\\Users\\\\21624\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmdline-tools\\\\latest\\\\bin''; echo ''y'' | .\\\\sdkmanager.bat ''platforms;android-35''\")",
+      "Bash(powershell -Command:*)",
+      "Bash(fvm flutter clean:*)",
+      "Bash(C:Users21624AppDataLocalAndroidSdkcmdline-toolslatestbinsdkmanager.bat \"ndk;27.0.12077973\" \"build-tools;35.0.0\")",
+      "Bash(cmd.exe /c \"C:\\\\Users\\\\21624\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmdline-tools\\\\latest\\\\bin\\\\sdkmanager.bat \"\"ndk;27.0.12077973\"\" \"\"build-tools;35.0.0\"\"\")",
+      "Bash(cmd.exe /c \"fvm flutter --version\")",
+      "Bash(cmd.exe /c \"fvm install stable && fvm use stable\")",
+      "Bash(cmd.exe /c \"cd C:\\\\Users\\\\21624\\\\Desktop\\\\edufirma && fvm flutter clean\")",
+      "Bash(cmd.exe /c \"cd C:\\\\Users\\\\21624\\\\Desktop\\\\edufirma && fvm flutter pub get\")",
+      "Bash(cmd.exe /c \"cd C:\\\\Users\\\\21624\\\\Desktop\\\\edufirma && fvm flutter build appbundle --release\")",
+      "Bash(cmd.exe /c \"cd C:\\\\Users\\\\21624\\\\Desktop\\\\edufirma\\\\android && rmdir /s /q .gradle 2>nul & rmdir /s /q build 2>nul & rmdir /s /q app\\\\build 2>nul & echo Cleaned\")",
+      "Bash(cmd.exe /c \"cd C:\\\\Users\\\\21624\\\\Desktop\\\\edufirma && fvm flutter clean && fvm flutter pub get && fvm flutter build appbundle --release\")",
+      "Bash(cmd.exe /c \"cd C:\\\\Users\\\\21624\\\\Desktop\\\\edufirma\\\\android && rmdir /s /q .gradle 2>nul & rmdir /s /q build 2>nul & rmdir /s /q app\\\\build 2>nul & cd .. && fvm flutter build appbundle --release\")",
+      "Bash(cmd.exe /c \"rmdir /s /q %USERPROFILE%\\\\.gradle\\\\caches\\\\8.6 2>nul & rmdir /s /q %USERPROFILE%\\\\.gradle\\\\caches\\\\8.7 2>nul & rmdir /s /q %USERPROFILE%\\\\.gradle\\\\caches\\\\transforms-4 2>nul & echo Gradle cache cleaned\")",
+      "Bash(cmd.exe /c \"rmdir /s /q %USERPROFILE%\\\\.gradle\\\\caches\\\\8.6 2>nul & echo Cleaned 8.6 cache\")",
+      "Bash(cmd.exe /c \"cd C:\\\\Users\\\\21624\\\\Desktop\\\\edufirma\\\\android && gradlew.bat --stop 2>nul & rmdir /s /q %USERPROFILE%\\\\.gradle\\\\caches 2>nul & rmdir /s /q %USERPROFILE%\\\\.gradle\\\\daemon 2>nul & echo Gradle caches and daemon cleaned\")",
+      "Bash(cmd.exe /c \"taskkill /f /im java.exe 2>nul & taskkill /f /im gradle.exe 2>nul & timeout /t 2 >nul & rmdir /s /q %USERPROFILE%\\\\.gradle\\\\caches\\\\transforms-4 2>nul & rmdir /s /q %USERPROFILE%\\\\.gradle\\\\caches\\\\8.6 2>nul & echo All cleaned\")",
+      "Bash(cmd.exe /c \"taskkill /f /im java.exe 2>nul & cd C:\\\\Users\\\\21624\\\\Desktop\\\\edufirma && fvm flutter build appbundle --release\")"
+    ]
+  }
+}

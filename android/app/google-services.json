@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "345041789158",
+    "project_id": "edufirma-7322f",
+    "storage_bucket": "edufirma-7322f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345041789158:android:cf41a75a8bed07f0861b27",
+        "android_client_info": {
+          "package_name": "com.edufirma.edufirma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345041789158-b1uatfsebmbf0vaegkuijt6gslthcfp1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT1Wgws_7yhDI0-4516-cnd_BEJVWoN1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345041789158-b1uatfsebmbf0vaegkuijt6gslthcfp1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345041789158:android:b75ff16783040912861b27",
+        "android_client_info": {
+          "package_name": "com.edufirma.learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345041789158-o6kna8d2h05drrtq1pqp8a8pm5e3g1vr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edufirma.learning",
+            "certificate_hash": "5c0075635741476b55b09cba1021e4e183d3a8ea"
+          }
+        },
+        {
+          "client_id": "345041789158-b1uatfsebmbf0vaegkuijt6gslthcfp1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT1Wgws_7yhDI0-4516-cnd_BEJVWoN1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345041789158-b1uatfsebmbf0vaegkuijt6gslthcfp1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

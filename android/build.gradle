@@ -1,0 +1,51 @@
+buildscript {
+    ext.kotlin_version = '2.1.0'
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.9.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.4.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+// Force all Android library subprojects to use compileSdk 35 so that
+// android:attr/lStar (API 31+) is available and resource linking succeeds.
+// Use beforeProject so the callback is registered before any project is evaluated.
+gradle.beforeProject { proj ->
+    proj.afterEvaluate {
+        if (proj.plugins.hasPlugin("com.android.library")) {
+            proj.android.compileSdkVersion 35
+            if (proj.android.namespace == null) {
+                def manifest = proj.file("src/main/AndroidManifest.xml")
+                if (manifest.exists()) {
+                    def packageName = new XmlSlurper().parse(manifest).'@package'.text()
+                    if (packageName) {
+                        proj.android.namespace = packageName
+                    }
+                }
+            }
+        }
+    }
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
